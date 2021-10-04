@@ -30,14 +30,14 @@ def help_command(update: Update, context: CallbackContext) -> None:
 
 def echo(update: Update, context: CallbackContext) -> None:
     """Echo the user message."""
-    update.message.reply_text(update.message.text + "Correto, Parabens!!! ")
+    update.message.reply_text(update.message.text + " " + "Correto, Parabens!!! ")
     
 
 
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("TOKEN")
+    updater = Updater("Toekn")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
